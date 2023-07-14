@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7B593228-4C02-4367-A09B-46CBD18A7199}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CreatureCounter</RootNamespace>
+    <AssemblyName>CreatureCounter</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GasCloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ForceOfEcho.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PowerOfMist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FireOfBat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EchoOfBat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GravityBoots.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SkillOfWolf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PowerOfWolf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RingOfVlad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeartOfVlad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RibOfVlad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToothOfVlad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EyeOfVlad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CubeOfZoe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpiritOrb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SoulOfWolf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FaerieScroll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JewelOfOpen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeapStone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MermanStatue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HolySymbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormOfMist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SoulOfBat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FamiliarCard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SilverRing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoldRing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Duplicator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crissaegrim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="export\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
